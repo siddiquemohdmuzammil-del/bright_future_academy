@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Future Academy Notice Board — announcements, academic updates, examinations, holidays, and admissions.">
+  <title>Notice Board | Bright Future Academy</title>
+
+  <link rel="stylesheet" href="notice-board.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    <p>Campus content| Official Notice Board</p>
+    <span id="currentDate">Loading date...</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="index.html" class="brand">
+      <div class="logo">CC</div>
+      <div class="brand-text">
+        <strong>Campus content</strong>
+        <span>LEARN • GROW • SUCCEED</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="admission.html">Admissions</a>
+      <a href="notice-board.html" class="active">Notice Board</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">INFORMATION & ANNOUNCEMENTS</span>
+        <h1>Notice <span>Board</span></h1>
+        <p>
+          Stay informed about academic activities, examinations, school
+          announcements, holidays, and admission updates.
+        </p>
+
+        <div class="hero-meta">
+          <span>📌 Academic Information</span>
+          <span>📅 Latest Updates</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span class="document-icon">▤</span>
+          <span class="sample-badge">SAMPLE CONTENT</span>
+        </div>
+        <h2>Stay Updated</h2>
+        <p>
+          Check this page regularly for notices and announcements.
+          Please confirm important dates with the school office.
+        </p>
+        <div class="hero-card-line"></div>
+        <div class="hero-card-footer">
+          <span>Bright Future Academy</span>
+          <span>Notice Board</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notice Summary -->
+    <section class="summary section-container">
+      <div class="summary-card">
+        <div class="summary-icon">📢</div>
+        <div>
+          <strong id="noticeCount">0</strong>
+          <span>Notices Listed</span>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-icon">📚</div>
+        <div>
+          <strong>Academic</strong>
+          <span>Learning Updates</span>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-icon">🗓️</div>
+        <div>
+          <strong>Important</strong>
+          <span>Dates & Reminders</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section class="notices-section section-container">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">SCHOOL INFORMATION</span>
+          <h2>Latest <span>Notices</span></h2>
+          <p>Search and filter the notices listed below.</p>
+        </div>
+
+        <div class="notice-status">
+          <span class="status-dot"></span>
+          Notice listings
+        </div>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="filter-panel">
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="noticeSearch"
+            placeholder="Search notices..."
+            aria-label="Search notices">
+        </div>
+
+        <div class="filter-controls">
+          <label class="visually-hidden" for="categoryFilter">
+            Filter by category
+          </label>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="academic">Academic</option>
+            <option value="examination">Examination</option>
+            <option value="admission">Admissions</option>
+            <option value="holiday">Holiday</option>
+            <option value="event">Events</option>
+            <option value="general">General</option>
+          </select>
+
+          <button type="button" class="reset-btn" id="resetFilters">
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <p class="sample-warning">
+        <strong>Demo notice:</strong>
+        The notices below are examples for website design. They are not
+        confirmed school announcements. Verify all details before publishing.
+      </p>
+
+      <!-- Notice List -->
+      <div class="notice-list" id="noticeList">
+
+        <article class="notice-card" data-category="academic">
+          <div class="notice-date">
+            <span class="date-day">01</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category academic">Academic</span>
+              <span class="demo-label">Sample</span>
+            </div>
+            <h3>Academic Session Information</h3>
+            <p>
+              Students and parents are advised to check the school's
+              published academic calendar for class schedules, activities,
+              and important academic dates.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: BFA-DEMO-001</span>
+              <span>For students and parents</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Information</span>
+          </div>
+        </article>
+
+        <article class="notice-card" data-category="examination">
+          <div class="notice-date">
+            <span class="date-day">02</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category examination">Examination</span>
+              <span class="demo-label">Sample</span>
+            </div>
+            <h3>Examination Preparation Reminder</h3>
+            <p>
+              Students should follow instructions from their teachers and
+              consult the school office for the confirmed examination
+              timetable, syllabus, and examination guidelines.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: BFA-DEMO-002</span>
+              <span>For students</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Reminder</span>
+          </div>
+        </article>
+
+        <article class="notice-card" data-category="admission">
+          <div class="notice-date">
+            <span class="date-day">03</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category admission">Admissions</span>
+              <span class="demo-label">Sample</span>
+            </div>
+            <h3>Admission Enquiry Information</h3>
+            <p>
+              Parents seeking information about admission eligibility,
+              required documents, and application procedures can contact
+              the school office for verified details.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: CC-DEMO-003</span>
+              <span>For parents and applicants</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Information</span>
+          </div>
+        </article>
+
+        <article class="notice-card" data-category="holiday">
+          <div class="notice-date">
+            <span class="date-day">04</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category holiday">Holiday</span>
+              <span class="demo-label">Sample</span>
+            </div>
+            <h3>School Holiday Updates</h3>
+            <p>
+              Parents and students should refer to notices issued by the
+              school for confirmed holidays, changes to working days,
+              and any revised class schedules.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: BFA-DEMO-004</span>
+              <span>For students and parents</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Reminder</span>
+          </div>
+        </article>
+
+        <article class="notice-card" data-category="event">
+          <div class="notice-date">
+            <span class="date-day">05</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category event">Events</span>
+              <span class="demo-label">Sample</span>
+            </div>
+            <h3>School Activities and Events</h3>
+            <p>
+              Information about school competitions, cultural programmes,
+              sports activities, and other events will be published after
+              the details have been confirmed.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: BFA-DEMO-005</span>
+              <span>For students and parents</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Announcement</span>
+          </div>
+        </article>
+
+        <article class="notice-card" data-category="general">
+          <div class="notice-date">
+            <span class="date-day">06</span>
+            <span class="date-month">SAMPLE</span>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="notice-content">
+            <div class="notice-labels">
+              <span class="category general">General</span>
+              <span class="demo-label">Sample</span>
+            </d.iv>
+            <h3>Contact and Office Enquiries</h3>
+            <p>
+              For questions about school information, please use the
+              contact page or confirm the appropriate contact details
+              with the school administration.
+            </p>
+            <div class="notice-meta">
+              <span>Reference: BFA-DEMO-006</span>
+              <span>General information</span>
+            </div>
+          </div>
+
+          <div class="notice-action">
+            <span class="document-mark">DOC</span>
+            <span class="notice-type">Information</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="no-results" id="noResults" hidden>
+        <div class="no-results-icon">⌕</div>
+        <h3>No notices found</h3>
+        <p>Try a different search term or choose another category.</p>
+      </div>
+
+      <div class="results-footer">
+        <p id="resultsText">Showing notices</p>
+        <button type="button" class="reset-btn" id="clearSearch">
+          Clear Search
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Official Information Reminder -->
+    <section class="policy-section">
+      <div class="policy-inner section-container">
+        <div class="policy-icon">ℹ</div>
+        <div>
+          <h2>Important Information for Parents & Students</h2>
+          <p>
+            Please rely on notices confirmed by the school administration.
+            For clarification about an announcement, date, or instruction,
+            contact the school office before taking action.
+          </p>
+        </div>
+        <a href="contact.html" class="btn btn-gold">Contact Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand footer-logo">
+          <div class="logo">CC</div>
+          <div class="brand-text">
+            <strong>Campus conyent</strong>
+            <span>LEARN • GROW • SUCCEED</span>
+          </div>
+        </a>
+
+        <p>
+          Inspiring students to learn, grow, and build a brighter future
+          through education and opportunity.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Academics.html">Academics</a>
+        <a href="events.html">Events</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Information</h3>
+        <p>📍 Government Polytechnic Dehradun, Uttarakhand</p>
+        <p>📞 <a href="tel:8859865305">8859865305</a></p>
+        <p>
+          ✉️
+          <a href="mailto:info@brightfutureacademy.edu">
+            info@campuscontent.edu
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Bright Future Academy. All rights reserved.</p>
+      <a href="#top">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Display current date
+    const dateElement = document.getElementById("currentDate");
+
+    dateElement.textContent = new Date().toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    });
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Navbar shadow on scroll
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      navbar.classList.toggle("scrolled", window.scrollY > 20);
+    });
+
+    // Notice search and category filter
+    const searchInput = document.getElementById("noticeSearch");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const noticeCards = Array.from(document.querySelectorAll(".notice-card"));
+    const noResults = document.getElementById("noResults");
+    const resultsText = document.getElementById("resultsText");
+    const noticeCount = document.getElementById("noticeCount");
+
+    noticeCount.textContent = noticeCards.length;
+
+    function filterNotices() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      const selectedCategory = categoryFilter.value;
+      let visibleCount = 0;
+
+      noticeCards.forEach(function (card) {
+        const cardText = card.textContent.toLowerCase();
+        const cardCategory = card.dataset.category;
+
+        const matchesSearch = cardText.includes(searchTerm);
+        const matchesCategory =
+          selectedCategory === "all" ||
+          cardCategory === selectedCategory;
+
+        const isVisible = matchesSearch && matchesCategory;
+
+        card.hidden = !isVisible;
+
+        if (isVisible) {
+          visibleCount++;
+        }
+      });
+
+      noResults.hidden = visibleCount !== 0;
+      resultsText.textContent =
+        "Showing " + visibleCount + " of " + noticeCards.length + " notices";
+    }
+
+    searchInput.addEventListener("input", filterNotices);
+    categoryFilter.addEventListener("change", filterNotices);
+
+    function resetNoticeFilters() {
+      searchInput.value = "";
+      categoryFilter.value = "all";
+      filterNotices();
+    }
+
+    document.getElementById("resetFilters")
+      .addEventListener("click", resetNoticeFilters);
+
+    document.getElementById("clearSearch")
+      .addEventListener("click", resetNoticeFilters);
+
+    filterNotices();
+  </script>
+
+</body>
+</html>

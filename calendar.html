@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View the Campus Content school calendar, upcoming events, and important academic dates.">
+  <title>School Calendar | Campus Content</title>
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+  <div class="topbar">
+    <div><span class="pulse"></span> Admissions Open for 2026–27</div>
+    <div id="clock" aria-live="polite"></div>
+  </div>
+
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Campus Content home">
+        <span class="logo">CC</span><span>Campus Content</span>
+      </a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Academics.html">Academics</a>
+        <a href="events.html">Events</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="adimssion.html">Admission</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Plan • Participate • Progress</p>
+        <h1>School <span>Calendar</span></h1>
+        <p class="hero-copy">Keep track of school activities, academic milestones, meetings, and celebrations throughout the year.</p>
+        <div class="hero-meta"><span class="meta-dot"></span> Academic session 2026–27 <span class="meta-divider">/</span> Dates are subject to school confirmation</div>
+      </div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section class="content-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Stay informed</p><h2>Important Dates & Events</h2></div>
+        <p class="section-intro">Use the calendar controls to explore months. Replace the example events with your school's approved schedule.</p>
+      </div>
+
+      <div class="calendar-layout">
+        <section class="calendar-panel" aria-label="Interactive monthly calendar">
+          <div class="calendar-toolbar">
+            <button class="month-btn" id="prevMonth" type="button" aria-label="Previous month">&#8592;</button>
+            <div class="month-title"><h3 id="monthLabel">Month Year</h3><p>Monthly overview</p></div>
+            <button class="month-btn" id="nextMonth" type="button" aria-label="Next month">&#8594;</button>
+          </div>
+          <div class="calendar-grid weekday-row" aria-hidden="true">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div class="calendar-grid" id="calendarDays" aria-label="Calendar dates"></div>
+          <div class="calendar-legend">
+            <span><i class="legend-dot gold-dot"></i> School event</span>
+            <span><i class="legend-dot navy-dot"></i> Selected date</span>
+          </div>
+        </section>
+
+        <aside class="events-panel">
+          <div class="events-panel-head">
+            <div><p class="eyebrow dark">On the schedule</p><h3 id="selectedDateTitle">Upcoming Events</h3></div>
+            <span class="calendar-icon" aria-hidden="true">✦</span>
+          </div>
+          <div id="eventList" class="event-list" aria-live="polite"></div>
+          <p class="note"><strong>Please note:</strong> Event dates and details on this demo page are examples for layout purposes. Confirm all dates with the school office before publishing.</p>
+        </aside>
+      </div>
+
+      <section class="guidance-strip">
+        <div class="guidance-icon" aria-hidden="true">i</div>
+        <div><h3>Need to confirm a date?</h3><p>For changes, holidays, or event timings, contact the school office before making arrangements.</p></div>
+        <a class="text-link" href="contact.html">Contact the school <span aria-hidden="true">→</span></a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><a class="footer-brand" href="index.html">Campus Content</a><p>Building a bright tomorrow through quality education and timeless values.</p></div>
+      <div><h4>Contact</h4><p>Phone: +91 8859865305<br>Email: <a href="mailto:info@campuscontent.edu">info@campuscontent.edu</a></p></div>
+      <div><h4>Visit</h4><p>Dehradun, Uttarakhand, India</p><a class="footer-link" href="contact.html">Get in touch →</a></div>
+    </div>
+    <div class="footer-bottom">© <span id="yearNow"></span> Campus Content. Please verify school notices with the administration.</div>
+  </footer>
+
+  <script>
+    const clock = document.getElementById("clock");
+    const navbar = document.getElementById("navbar");
+    function updateClock() {
+      clock.textContent = new Date().toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" });
+    }
+    updateClock();
+    setInterval(updateClock, 60000);
+    window.addEventListener("scroll", () => navbar.classList.toggle("scrolled", window.scrollY > 8));
+    document.getElementById("yearNow").textContent = new Date().getFullYear();
+
+    // EDIT THESE EXAMPLE EVENTS to match the school's officially confirmed dates.
+    const schoolEvents = [
+      { date: "2026-11-05", title: "Classroom Learning Showcase", type: "Academic", time: "School hours", detail: "Students present selected classroom projects." },
+      { date: "2026-11-14", title: "Children's Day Celebration", type: "Celebration", time: "To be confirmed", detail: "A school celebration recognising the joy of learning." },
+      { date: "2026-11-20", title: "Parent–Teacher Meeting", type: "Meeting", time: "To be confirmed", detail: "A chance to discuss student progress with teachers." },
+      { date: "2026-12-04", title: "Science & Innovation Display", type: "Academic", time: "To be confirmed", detail: "Student models and learning activities on display." },
+      { date: "2026-12-18", title: "Winter Cultural Programme", type: "Activity", time: "To be confirmed", detail: "Music, performances, and student participation." }
+    ];
+
+    const daysEl = document.getElementById("calendarDays");
+    const monthLabel = document.getElementById("monthLabel");
+    const eventList = document.getElementById("eventList");
+    const selectedDateTitle = document.getElementById("selectedDateTitle");
+    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    let viewDate = new Date();
+    viewDate = new Date(viewDate.getFullYear(), viewDate.getMonth(), 1);
+    let selectedISO = toISO(new Date());
+
+    function toISO(date) {
+      return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,"0")}-${String(date.getDate()).padStart(2,"0")}`;
+    }
+    function prettyDate(iso) {
+      const [y,m,d] = iso.split("-").map(Number);
+      return new Date(y,m-1,d).toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"});
+    }
+    function renderCalendar() {
+      const year = viewDate.getFullYear();
+      const month = viewDate.getMonth();
+      monthLabel.textContent = `${monthNames[month]} ${year}`;
+      daysEl.innerHTML = "";
+      const firstWeekday = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const previousMonthDays = new Date(year, month, 0).getDate();
+
+      for (let i = 0; i < 42; i++) {
+        let dayNum, dateObj, outside = false;
+        if (i < firstWeekday) {
+          dayNum = previousMonthDays - firstWeekday + i + 1;
+          dateObj = new Date(year, month - 1, dayNum); outside = true;
+        } else if (i >= firstWeekday + daysInMonth) {
+          dayNum = i - firstWeekday - daysInMonth + 1;
+          dateObj = new Date(year, month + 1, dayNum); outside = true;
+        } else {
+          dayNum = i - firstWeekday + 1;
+          dateObj = new Date(year, month, dayNum);
+        }
+        const iso = toISO(dateObj);
+        const eventOnDay = schoolEvents.some(e => e.date === iso);
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "day" + (outside ? " outside" : "") + (iso === selectedISO ? " selected" : "") + (iso === toISO(new Date()) ? " today" : "");
+        button.textContent = dayNum;
+        button.setAttribute("aria-label", prettyDate(iso) + (eventOnDay ? ", event scheduled" : ""));
+        if (eventOnDay) button.classList.add("has-event");
+        button.addEventListener("click", () => {
+          selectedISO = iso;
+          if (dateObj.getMonth() !== month || dateObj.getFullYear() !== year) viewDate = new Date(dateObj.getFullYear(), dateObj.getMonth(), 1);
+          renderCalendar();
+          renderEvents();
+        });
+        daysEl.appendChild(button);
+      }
+    }
+    function renderEvents() {
+      selectedDateTitle.textContent = prettyDate(selectedISO);
+      const matches = schoolEvents.filter(e => e.date === selectedISO);
+      eventList.innerHTML = "";
+      if (!matches.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.innerHTML = '<span class="empty-symbol">✦</span><h4>No event listed</h4><p>There are no example events saved for this date. Check another highlighted date or contact the school office.</p>';
+        eventList.appendChild(empty);
+        return;
+      }
+      matches.forEach(e => {
+        const card = document.createElement("article");
+        card.className = "event-item";
+        const type = document.createElement("span"); type.className = "event-type"; type.textContent = e.type;
+        const title = document.createElement("h4"); title.textContent = e.title;
+        const time = document.createElement("p"); time.className = "event-time"; time.textContent = "◷ " + e.time;
+        const detail = document.createElement("p"); detail.textContent = e.detail;
+        card.append(type,title,time,detail);
+        eventList.appendChild(card);
+      });
+    }
+    document.getElementById("prevMonth").addEventListener("click", () => { viewDate = new Date(viewDate.getFullYear(), viewDate.getMonth()-1, 1); renderCalendar(); });
+    document.getElementById("nextMonth").addEventListener("click", () => { viewDate = new Date(viewDate.getFullYear(), viewDate.getMonth()+1, 1); renderCalendar(); });
+    renderCalendar();
+    renderEvents();
+  </script>
+</body>
+</html>

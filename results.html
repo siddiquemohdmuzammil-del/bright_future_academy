@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bright Future Academy official examination results portal. Access academic results, marks, grades, and student performance reports.">
+
+    <title>Examination Results | Campus Content</title>
+
+    <link rel="stylesheet" href="results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="topbar">
+        <div class="topbar-message">
+            <span class="pulse"></span>
+            Official Academic Results Portal
+        </div>
+        <div id="clock">Loading date and time...</div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+
+            <a href="index.html" class="brand">
+                <div class="logo">CC</div>
+                <div class="brand-text">
+                    <strong>Campus Content</strong>
+                    <span>LEARN • LEAD • ACHIEVE</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Academics.html">Academics</a>
+                <a href="events.html">Events</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="results.html" class="active">Results</a>
+                <a href="admission.html">Admission</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    ACADEMIC EXCELLENCE
+                </div>
+
+                <h1>Examination <span>Results</span></h1>
+
+                <p>
+                    Every result tells a story of dedication, perseverance,
+                    and progress. Access your academic performance through
+                    the Bright Future Academy results portal.
+                </p>
+
+                <div class="hero-badges">
+                    <span>✓ Academic Transparency</span>
+                    <span>✓ Student Progress</span>
+                    <span>✓ Performance Reports</span>
+                </div>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="decoration-circle">
+                    <div class="decoration-inner">
+                        <span class="cap-icon">✦</span>
+                        <strong>LEARN</strong>
+                        <span class="decoration-divider"></span>
+                        <strong>ACHIEVE</strong>
+                        <small>YOUR FUTURE STARTS HERE</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Examination Results</span>
+        </div>
+
+        <!-- Main Results Section -->
+        <section class="results-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">STUDENT ACADEMIC SERVICES</span>
+                    <h2>Check Your Results</h2>
+                    <p>
+                        Select your examination and enter your student details
+                        to view your academic performance.
+                    </p>
+                </div>
+
+                <div class="session-badge">
+                    <span class="session-dot"></span>
+                    Academic Session 2026–27
+                </div>
+            </div>
+
+            <div class="results-layout">
+
+                <!-- Search Panel -->
+                <section class="search-panel">
+                    <div class="panel-heading">
+                        <div class="panel-icon">▤</div>
+                        <div>
+                            <h3>Student Result Search</h3>
+                            <p>Enter your details carefully</p>
+                        </div>
+                    </div>
+
+                    <div class="notice">
+                        <span class="notice-icon">ⓘ</span>
+                        <p>
+                            Please use the correct admission number and
+                            examination details to search for your result.
+                        </p>
+                    </div>
+
+                    <form id="resultForm">
+
+                        <div class="form-group">
+                            <label for="studentName">Student Name</label>
+                            <input
+                                type="text"
+                                id="studentName"
+                                name="studentName"
+                                placeholder="Enter student's full name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admissionNo">Admission Number</label>
+                            <input
+                                type="text"
+                                id="admissionNo"
+                                name="admissionNo"
+                                placeholder="e.g. CC-2026-001"
+                                required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="className">Class</label>
+                                <select id="className" name="className" required>
+                                    <option value="">Select class</option>
+                                    <option>Nursery</option>
+                                    <option>LKG</option>
+                                    <option>UKG</option>
+                                    <option>Class I</option>
+                                    <option>Class II</option>
+                                    <option>Class III</option>
+                                    <option>Class IV</option>
+                                    <option>Class V</option>
+                                    <option>Class VI</option>
+                                    <option>Class VII</option>
+                                    <option>Class VIII</option>
+                                    <option>Class IX</option>
+                                    <option>Class X</option>
+                                    <option>Class XI</option>
+                                    <option>Class XII</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="section">Section</label>
+                                <select id="section" name="section" required>
+                                    <option value="">Select section</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="examType">Examination</label>
+                            <select id="examType" name="examType" required>
+                                <option value="">Select examination</option>
+                                <option value="unit1">Unit Test I</option>
+                                <option value="midterm">Mid-Term Examination</option>
+                                <option value="unit2">Unit Test II</option>
+                                <option value="annual">Annual Examination</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="session">Academic Session</label>
+                            <select id="session" name="session" required>
+                                <option value="2026-27">2026–27</option>
+                                <option value="2025-26">2025–26</option>
+                                <option value="2024-25">2024–25</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="search-btn">
+                            <span>View Examination Result</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+
+                        <p class="form-footnote">
+                            <span>🔒</span>
+                            Student information should be kept confidential.
+                        </p>
+
+                    </form>
+                </section>
+
+                <!-- Information Panel -->
+                <aside class="information-column">
+
+                    <div class="info-card featured-info">
+                        <div class="info-top">
+                            <span class="info-icon">✦</span>
+                            <span class="info-tag">ACADEMIC GROWTH</span>
+                        </div>
+
+                        <h3>Progress is more important than perfection.</h3>
+
+                        <p>
+                            Every assessment helps students identify their
+                            strengths, improve their skills, and prepare
+                            confidently for the next academic milestone.
+                        </p>
+
+                        <div class="gold-line"></div>
+
+                        <div class="featured-footer">
+                            <span></span>CAMPUS CONTENT
+                            <span>EST. IN KNOWLEDGE</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="small-card-heading">
+                            <div class="small-icon">✓</div>
+                            <h3>How to Check Results</h3>
+                        </div>
+
+                        <ol class="steps">
+                            <li>
+                                <span>01</span>
+                                <div>
+                                    <strong>Enter student details</strong>
+                                    <p>Provide your name and admission number.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>02</span>
+                                <div>
+                                    <strong>Select examination</strong>
+                                    <p>Choose your class, section, and exam.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <span>03</span>
+                                <div>
+                                    <strong>View your marksheet</strong>
+                                    <p>Review subject-wise marks and grades.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">?</div>
+                        <div>
+                            <h3>Need Assistance?</h3>
+                            <p>Contact the school office for result-related queries.</p>
+                            <a href="contact.html">Contact School Office →</a>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+
+            <!-- Result Output -->
+            <section class="result-output" id="resultOutput" hidden>
+
+                <div class="result-toolbar">
+                    <div>
+                        <span class="section-label">ACADEMIC RECORD</span>
+                        <h2>Student Marksheet</h2>
+                    </div>
+
+                    <button type="button" class="print-btn" id="printBtn">
+                        ⎙ Print Marksheet
+                    </button>
+                </div>
+
+                <div id="marksheetContent"></div>
+
+            </section>
+
+            <!-- Grading System -->
+            <section class="grading-section">
+                <div class="grading-heading">
+                    <span class="section-label">UNDERSTANDING YOUR PERFORMANCE</span>
+                    <h2>Grading System</h2>
+                    <p>
+                        The following is an illustrative grading reference.
+                        Actual grading criteria should be confirmed with the school.
+                    </p>
+                </div>
+
+                <div class="grade-grid">
+                    <div class="grade-card">
+                        <span class="grade-letter grade-a">A+</span>
+                        <strong>Outstanding</strong>
+                        <span>90–100%</span>
+                    </div>
+
+                    <div class="grade-card">
+                        <span class="grade-letter grade-b">A</span>
+                        <strong>Excellent</strong>
+                        <span>80–89%</span>
+                    </div>
+
+                    <div class="grade-card">
+                        <span class="grade-letter grade-c">B</span>
+                        <strong>Very Good</strong>
+                        <span>70–79%</span>
+                    </div>
+
+                    <div class="grade-card">
+                        <span class="grade-letter grade-d">C</span>
+                        <strong>Good</strong>
+                        <span>60–69%</span>
+                    </div>
+
+                    <div class="grade-card">
+                        <span class="grade-letter grade-e">D</span>
+                        <strong>Satisfactory</strong>
+                        <span>40–59%</span>
+                    </div>
+
+                    <div class="grade-card">
+                        <span class="grade-letter grade-f">F</span>
+                        <strong>Needs Improvement</strong>
+                        <span>Below 40%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Important Notice -->
+            <section class="important-notice">
+                <div class="notice-symbol">i</div>
+                <div>
+                    <h3>Important Information</h3>
+                    <p>
+                        Results displayed on this page are for academic reference.
+                        For corrections, discrepancies, or official verification,
+                        please contact the school administration. Do not share
+                        admission details or marksheets publicly.
+                    </p>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="brand footer-logo">
+                    <div class="logo">CC</div>
+                    <div class="brand-text">
+                        <strong>Campus Content</strong>
+                        <span>LEARN • LEAD • ACHIEVE</span>
+                    </div>
+                </a>
+
+                <p>
+                    Empowering learners through quality education,
+                    strong values, and a commitment to lifelong learning.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="Academics.html">Academics</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="adimssion.html">Admissions</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Student Services</h4>
+                <a href="results.html">Examination Results</a>
+                <a href="noticeboard.html">Notice Board</a>
+                <a href="events.html">School Events</a>
+                <a href="contact.html">Contact Office</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Information</h4>
+                <p>📍 Government Polytechnic Dehradun, Uttarakhand</p>
+                <p>☎ <a href="tel:+918859865305">+91 88598 65305</a></p>
+                <p>✉ <a href="mailto:info@brightfutureacademy.edu">
+                    info@brightfutureacademy.edu</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="copyrightYear"></span> Campus Content. All rights reserved.</p>
+            <p>Knowledge Today. Leadership Tomorrow.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Live date and time
+        const clock = document.getElementById("clock");
+
+        function updateClock() {
+            clock.textContent = new Date().toLocaleString("en-IN", {
+                dateStyle: "medium",
+                timeStyle: "medium"
+            });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        document.getElementById("copyrightYear").textContent =
+            new Date().getFullYear();
+
+        // Responsive mobile navigation
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        // Navbar shadow
+        window.addEventListener("scroll", () => {
+            document.getElementById("navbar")
+                .classList.toggle("scrolled", window.scrollY > 10);
+        });
+
+        /*
+          FRONTEND DEMO ONLY:
+          These sample records are fictional.
+          Replace this object with a backend API request later.
+        */
+        const demoResults = [
+            {
+                name: "Aarav Sharma",
+                admissionNo: "BFA-2026-001",
+                className: "Class X",
+                section: "A",
+                examType: "annual",
+                session: "2026-27",
+                subjects: [
+                    { name: "English", marks: 92, max: 100 },
+                    { name: "Mathematics", marks: 96, max: 100 },
+                    { name: "Science", marks: 89, max: 100 },
+                    { name: "Social Science", marks: 87, max: 100 },
+                    { name: "Computer Science", marks: 98, max: 100 }
+                ]
+            },
+            {
+                name: "Aarav Sharma",
+                admissionNo: "BFA-2026-001",
+                className: "Class X",
+                section: "A",
+                examType: "midterm",
+                session: "2026-27",
+                subjects: [
+                    { name: "English", marks: 85, max: 100 },
+                    { name: "Mathematics", marks: 91, max: 100 },
+                    { name: "Science", marks: 88, max: 100 },
+                    { name: "Social Science", marks: 82, max: 100 },
+                    { name: "Computer Science", marks: 95, max: 100 }
+                ]
+            }
+        ];
+
+        const examNames = {
+            unit1: "Unit Test I",
+            midterm: "Mid-Term Examination",
+            unit2: "Unit Test II",
+            annual: "Annual Examination"
+        };
+
+        function getGrade(percentage) {
+            if (percentage >= 90) return "A+";
+            if (percentage >= 80) return "A";
+            if (percentage >= 70) return "B";
+            if (percentage >= 60) return "C";
+            if (percentage >= 40) return "D";
+            return "F";
+        }
+
+        const resultForm = document.getElementById("resultForm");
+        const resultOutput = document.getElementById("resultOutput");
+        const marksheetContent = document.getElementById("marksheetContent");
+
+        resultForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("studentName").value.trim();
+            const admissionNo = document.getElementById("admissionNo")
+                .value.trim();
+            const className = document.getElementById("className").value;
+            const section = document.getElementById("section").value;
+            const examType = document.getElementById("examType").value;
+            const session = document.getElementById("session").value;
+
+            const result = demoResults.find(student =>
+                student.name.toLowerCase() === name.toLowerCase() &&
+                student.admissionNo.toLowerCase() ===
+                    admissionNo.toLowerCase() &&
+                student.className === className &&
+                student.section === section &&
+                student.examType === examType &&
+                student.session === session
+            );
+
+            if (!result) {
+                resultOutput.hidden = false;
+                marksheetContent.innerHTML = `
+                    <div class="no-result">
+                        <div class="no-result-icon">!</div>
+                        <h3>No matching demo result found</h3>
+                        <p>
+                            Please check your entries. This page currently
+                            contains only fictional demonstration records.
+                            A real student database has not been connected yet.
+                        </p>
+                    </div>
+                `;
+
+                resultOutput.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+                return;
+            }
+
+            const totalMarks = result.subjects.reduce(
+                (sum, subject) => sum + subject.marks, 0
+            );
+
+            const maxMarks = result.subjects.reduce(
+                (sum, subject) => sum + subject.max, 0
+            );
+
+            const percentage = (totalMarks / maxMarks) * 100;
+            const grade = getGrade(percentage);
+            const status = result.subjects.every(subject =>
+                subject.marks / subject.max >= 0.33
+            ) ? "Pass" : "Needs Review";
+
+            const rows = result.subjects.map((subject, index) => `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${subject.name}</td>
+                    <td>${subject.max}</td>
+                    <td>${subject.marks}</td>
+                    <td>${getGrade(subject.marks / subject.max * 100)}</td>
+                </tr>
+            `).join("");
+
+            // Use textContent for user-entered details to avoid injecting HTML.
+            marksheetContent.replaceChildren();
+
+            const sheet = document.createElement("div");
+            sheet.className = "marksheet";
+
+            sheet.innerHTML = `
+                <div class="marksheet-header">
+                    <div class="marksheet-emblem">BFA</div>
+                    <div>
+                        <h2>Bright Future Academy</h2>
+                        <p>Government Polytechnic Dehradun, Uttarakhand</p>
+                        <h3>${examNames[result.examType]} — ${result.session}</h3>
+                        <span>STUDENT ACADEMIC MARKSHEET</span>
+                    </div>
+                </div>
+
+                <div class="student-details">
+                    <div><span>Student Name</span><strong class="student-name"></strong></div>
+                    <div><span>Admission Number</span><strong class="student-admission"></strong></div>
+                    <div><span>Class</span><strong class="student-class"></strong></div>
+                    <div><span>Section</span><strong class="student-section"></strong></div>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="marks-table">
+                        <thead>
+                            <tr>
+                                <th>S. No.</th>
+                                <th>Subject</th>
+                                <th>Maximum Marks</th>
+                                <th>Marks Obtained</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">TOTAL</th>
+                                <th>${maxMarks}</th>
+                                <th>${totalMarks}</th>
+                                <th>${grade}</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="performance-summary">
+                    <div>
+                        <span>Percentage</span>
+                        <strong>${percentage.toFixed(2)}%</strong>
+                    </div>
+                    <div>
+                        <span>Overall Grade</span>
+                        <strong>${grade}</strong>
+                    </div>
+                    <div>
+                        <span>Result Status</span>
+                        <strong class="status-value">${status}</strong>
+                    </div>
+                </div>
+
+                <div class="marksheet-footer">
+                    <p>This is a demonstration marksheet, not an official academic record.</p>
+                    <div class="signature-row">
+                        <span>Class Teacher</span>
+                        <span>School Administration</span>
+                    </div>
+                </div>
+            `;
+
+            sheet.querySelector(".student-name").textContent = result.name;
+            sheet.querySelector(".student-admission").textContent =
+                result.admissionNo;
+            sheet.querySelector(".student-class").textContent =
+                result.className;
+            sheet.querySelector(".student-section").textContent =
+                result.section;
+
+            marksheetContent.appendChild(sheet);
+            resultOutput.hidden = false;
+
+            resultOutput.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+
+        // Print only the marksheet
+        document.getElementById("printBtn").addEventListener("click", () => {
+            if (marksheetContent.querySelector(".marksheet")) {
+                window.print();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Discover school events, student activities, academic competitions, celebrations and important dates at Bright Future Academy.">
+
+  <title>Events & Activities | Bright Future Academy</title>
+
+  <link rel="stylesheet" href="academics.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="events.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="topbar">
+    <span>✦ Campus Content | Learning Beyond Classrooms</span>
+    <span id="clock"></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+
+      <a class="brand" href="index.html">
+        <span class="logo">CC</span>
+        <span>Campus Content</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="events.html" class="active" aria-current="page">Events</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="admission.html">Admission</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="events-hero">
+      <div class="events-hero-inner">
+        <span class="eyebrow">Discover • Participate • Celebrate</span>
+
+        <h1>Every Moment<br>Creates a Memory.</h1>
+
+        <p>
+          From academic competitions and cultural celebrations to
+          sports and creative exhibitions, discover the experiences
+          that bring our school community together.
+        </p>
+
+        <a href="#upcoming-events" class="btn btn-gold">
+          Explore Events ↓
+        </a>
+
+        <a href="#school-calendar" class="btn btn-outline">
+          School Calendar
+        </a>
+      </div>
+    </section>
+
+    <!-- Introduction and Featured Event -->
+    <section class="section">
+
+      <div class="events-intro">
+        <span class="eyebrow" style="color:#a47b29;">Life at BFA</span>
+
+        <h2>More Than Just a School Day</h2>
+
+        <p>
+          Every event is an opportunity to learn something new,
+          discover a talent, build friendships, and develop confidence.
+          Our school activities encourage students to explore their
+          interests both inside and outside the classroom.
+        </p>
+      </div>
+
+      <article class="featured-event">
+
+        <img
+          class="featured-image"
+          src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1000&q=85"
+          alt="Students participating in a school gathering"
+          loading="lazy"
+        >
+
+        <div class="featured-content">
+
+          <span class="event-label">Featured Event</span>
+
+          <h3>Annual School Celebration</h3>
+
+          <p>
+            A celebration of creativity, teamwork, student performances,
+            and the achievements of our school community. Join us for
+            a memorable experience filled with talent and inspiration.
+          </p>
+
+          <div class="event-details">
+            <span>📅 Date: To be announced</span>
+            <span>📍 Venue: School Campus</span>
+            <span>👥 Participants: Students and Families</span>
+          </div>
+
+          <a href="#contact" class="btn btn-gold">
+            Contact the School →
+          </a>
+
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="soft" id="upcoming-events">
+      <div class="section">
+
+        <div class="events-intro">
+          <span class="eyebrow" style="color:#a47b29;">What's Happening</span>
+          <h2>Explore Our School Events</h2>
+          <p>
+            Explore activities that inspire learning, encourage
+            participation, and celebrate student potential.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="event-filters" aria-label="Filter events">
+
+          <button class="filter-btn active" type="button"
+                  data-filter="all" aria-pressed="true">
+            All Events
+          </button>
+
+          <button class="filter-btn" type="button"
+                  data-filter="academic" aria-pressed="false">
+            Academic
+          </button>
+
+          <button class="filter-btn" type="button"
+                  data-filter="cultural" aria-pressed="false">
+            Cultural
+          </button>
+
+          <button class="filter-btn" type="button"
+                  data-filter="sports" aria-pressed="false">
+            Sports
+          </button>
+
+          <button class="filter-btn" type="button"
+                  data-filter="community" aria-pressed="false">
+            Community
+          </button>
+
+        </div>
+
+        <div class="events-grid" id="eventsGrid">
+
+          <!-- Event 1 -->
+          <article class="event-card" data-category="academic">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+                alt="Students learning in a classroom"
+                loading="lazy"
+              >
+              <span class="event-category">Academic</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Science and Innovation Exhibition</h3>
+              <p>
+                Discover student projects, creative experiments,
+                scientific discoveries, and innovative ideas.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Campus</span>
+                <strong>Explore & Learn</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2 -->
+          <article class="event-card" data-category="cultural">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80"
+                alt="Stage and performing arts"
+                loading="lazy"
+              >
+              <span class="event-category">Cultural</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Cultural Fest and Talent Showcase</h3>
+              <p>
+                Celebrate music, dance, art, drama, and the
+                diverse talents of our students.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Auditorium</span>
+                <strong>Express Yourself</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3 -->
+          <article class="event-card" data-category="sports">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+                alt="Athletes participating in a sporting event"
+                loading="lazy"
+              >
+              <span class="event-category">Sports</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Annual Sports Meet</h3>
+              <p>
+                Encourage fitness, fair play, teamwork, and
+                determination through exciting sporting activities.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Sports Ground</span>
+                <strong>Play & Achieve</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 4 -->
+          <article class="event-card" data-category="academic">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80"
+                alt="Books and writing materials"
+                loading="lazy"
+              >
+              <span class="event-category">Academic</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Literary and Quiz Competition</h3>
+              <p>
+                Build knowledge, reading habits, communication,
+                and critical thinking through friendly competition.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Library</span>
+                <strong>Think & Discover</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 5 -->
+          <article class="event-card" data-category="community">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80"
+                alt="People coming together for a community activity"
+                loading="lazy"
+              >
+              <span class="event-category">Community</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Parent-Teacher Interaction</h3>
+              <p>
+                Connect families and teachers to discuss student
+                progress, learning goals, and development.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Campus</span>
+                <strong>Growing Together</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 6 -->
+          <article class="event-card" data-category="community">
+            <div class="event-image-wrap">
+              <img
+                class="event-image"
+                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80"
+                alt="Community volunteering activity"
+                loading="lazy"
+              >
+              <span class="event-category">Community</span>
+            </div>
+
+            <div class="event-body">
+              <span class="event-date">Date to be announced</span>
+              <h3>Environment and Green Campus Drive</h3>
+              <p>
+                Encourage environmental responsibility through
+                awareness activities and campus cleanliness.
+              </p>
+
+              <div class="event-footer">
+                <span>📍 School Campus</span>
+                <strong>Care for Nature</strong>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="no-events" id="noEvents">
+          No events are available in this category.
+        </p>
+
+        <div class="notice">
+          <strong>Important Notice:</strong>
+          The activities listed above are sample event announcements.
+          Please contact the school to confirm actual dates, timings,
+          venues, and participation details.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- School Calendar -->
+    <section class="section" id="school-calendar">
+
+      <div class="events-intro">
+        <span class="eyebrow" style="color:#a47b29;">Plan Ahead</span>
+        <h2>School Calendar and Important Activities</h2>
+        <p>
+          Keep track of academic activities and school-community
+          programmes throughout the session.
+        </p>
+      </div>
+
+      <div class="calendar-layout">
+
+        <div class="calendar-card">
+          <h3>Academic Activities</h3>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>01</strong>
+              <span>Term</span>
+            </div>
+            <div>
+              <h4>Classroom Assessments</h4>
+              <p>Dates to be confirmed by the school.</p>
+            </div>
+          </div>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>02</strong>
+              <span>Term</span>
+            </div>
+            <div>
+              <h4>Project Exhibition</h4>
+              <p>Showcase student learning and creativity.</p>
+            </div>
+          </div>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>03</strong>
+              <span>Term</span>
+            </div>
+            <div>
+              <h4>Annual Academic Review</h4>
+              <p>Review learning progress and future goals.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-card">
+          <h3>School Community</h3>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>01</strong>
+              <span>Event</span>
+            </div>
+            <div>
+              <h4>Sports and Fitness Activities</h4>
+              <p>Promoting participation and healthy habits.</p>
+            </div>
+          </div>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>02</strong>
+              <span>Event</span>
+            </div>
+            <div>
+              <h4>Arts and Cultural Programmes</h4>
+              <p>Celebrating expression and creativity.</p>
+            </div>
+          </div>
+
+          <div class="calendar-item">
+            <div class="date-box">
+              <strong>03</strong>
+              <span>Event</span>
+            </div>
+            <div>
+              <h4>Parent Engagement Activities</h4>
+              <p>Strengthening family-school partnerships.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="notice">
+        <strong>Calendar update:</strong>
+        This is a sample calendar layout, not a confirmed school
+        timetable. Replace the entries with official dates and
+        announcements before publishing.
+      </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="event-cta">
+      <span class="eyebrow">Be Part of the Experience</span>
+
+      <h2>Great Experiences. Lasting Memories.</h2>
+
+      <p>
+        Stay connected with Bright Future Academy for school
+        announcements, activities, celebrations, and upcoming events.
+      </p>
+
+      <a href="#contact" class="btn btn-gold">
+        Contact the School →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+
+      <div>
+        <h3>Campus Content</h3>
+        <p>
+          Inspiring young minds through quality education,
+          meaningful experiences, and timeless values.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="academics.html">Academics</a></p>
+        <p><a href="events.html">Events</a></p>
+      </div>
+
+      <div>
+        <h4>Get in Touch</h4>
+        <p>Dehradun, Uttarakhand, India</p>
+        <p>
+          <a href="mailto:info@Campuscontent.edu">
+            Email the Academy
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Live date and time
+    const clock = document.getElementById("clock");
+
+    function updateClock() {
+      clock.textContent = new Date().toLocaleString("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+    }
+
+    updateClock();
+    setInterval(updateClock, 60000);
+
+    // Navbar shadow while scrolling
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 10);
+    });
+
+    // Event category filtering
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const eventCards = document.querySelectorAll(".event-card");
+    const noEvents = document.getElementById("noEvents");
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const selectedCategory = button.dataset.filter;
+        let visibleCount = 0;
+
+        filterButtons.forEach(item => {
+          const isActive = item === button;
+          item.classList.toggle("active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+
+        eventCards.forEach(card => {
+          const matches =
+            selectedCategory === "all" ||
+            card.dataset.category === selectedCategory;
+
+          card.hidden = !matches;
+
+          if (matches) {
+            visibleCount++;
+          }
+        });
+
+        noEvents.style.display = visibleCount === 0 ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>

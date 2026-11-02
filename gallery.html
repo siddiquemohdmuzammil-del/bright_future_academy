@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore the school gallery of Bright Future Academy, featuring annual functions, sports, cultural events, classroom activities and student achievements.">
+
+    <title>School Gallery | Campus Content</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="topbar">
+        <div class="topbar-message">
+            <span class="pulse"></span>
+            Admissions Open for 2026–27
+        </div>
+        <div id="clock">Loading date and time...</div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+
+            <a href="index.html" class="brand">
+                <div class="logo">CC</div>
+                <div class="brand-text">
+                    <strong>Campus Content</strong>
+                    <span>LEARN • LEAD • ACHIEVE</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks"
+                 aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Academics.html">Academics</a>
+                <a href="events.html">Events</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="results.html">Results</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="admission.html">Admission</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Banner -->
+        <section class="gallery-hero">
+            <div class="hero-shade"></div>
+
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span></span>
+                        OUR MEMORIES, OUR PRIDE
+                    </div>
+
+                    <h1>Life at <span>Bright Future</span></h1>
+
+                    <p>
+                        Discover the moments that make our school special —
+                        inspiring achievements, joyful celebrations,
+                        creative learning, and friendships that last a lifetime.
+                    </p>
+
+                    <a href="#photoGallery" class="hero-button">
+                        Explore Our Gallery <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-star">✦</span>
+                    <p>Every picture holds a memory.</p>
+                    <span class="note-line"></span>
+                    <small>EVERY MEMORY TELLS OUR STORY</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>School Gallery</span>
+        </div>
+
+        <!-- Gallery Introduction -->
+        <section class="gallery-section" id="photoGallery">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">MOMENTS WORTH REMEMBERING</span>
+                    <h2>Our School Gallery</h2>
+                    <p>
+                        A glimpse into our vibrant school community,
+                        where learning meets creativity and every achievement matters.
+                    </p>
+                </div>
+
+                <div class="gallery-count">
+                    <span class="count-icon">▧</span>
+                    <div>
+                        <strong id="photoCount">09</strong>
+                        <small>Gallery Photos</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Memories -->
+            <section class="featured-grid" aria-label="Featured school memories">
+
+                <article class="featured-card featured-large">
+                    <img
+                        src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=85"
+                        alt="Students gathered for a school activity"
+                        fetchpriority="high">
+
+                    <div class="featured-overlay">
+                        <span class="photo-category">SCHOOL LIFE</span>
+                        <h3>Learning Together, Growing Together</h3>
+                        <p>Creating a community of curious and confident learners.</p>
+                        <button class="view-featured" type="button"
+                                data-image="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1600&q=90"
+                                data-title="Learning Together, Growing Together">
+                            View Photograph ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="featured-card featured-small">
+                    <img
+                        src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=85"
+                        alt="Teacher helping students in a classroom"
+                        loading="lazy">
+
+                    <div class="featured-overlay">
+                        <span class="photo-category">ACADEMICS</span>
+                        <h3>Inspired to Learn</h3>
+                        <button class="view-featured" type="button"
+                                data-image="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1600&q=90"
+                                data-title="Inspired to Learn">
+                            View Photograph ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="featured-card featured-small">
+                    <img
+                        src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=900&q=85"
+                        alt="Students celebrating together at an event"
+                        loading="lazy">
+
+                    <div class="featured-overlay">
+                        <span class="photo-category">CELEBRATIONS</span>
+                        <h3>Moments of Joy</h3>
+                        <button class="view-featured" type="button"
+                                data-image="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1600&q=90"
+                                data-title="Moments of Joy">
+                            View Photograph ↗
+                        </button>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Category Filters -->
+            <div class="gallery-controls">
+                <div class="filter-heading">
+                    <h3>Explore Our Memories</h3>
+                    <p>Browse photographs by category.</p>
+                </div>
+
+                <div class="filter-buttons" role="group"
+                     aria-label="Filter gallery by category">
+
+                    <button class="filter-btn active"
+                            type="button" data-filter="all"
+                            aria-pressed="true">All Photos</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="events"
+                            aria-pressed="false">Events</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="sports"
+                            aria-pressed="false">Sports</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="academic"
+                            aria-pressed="false">Academics</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="cultural"
+                            aria-pressed="false">Cultural</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="workshops"
+                            aria-pressed="false">Workshops</button>
+
+                    <button class="filter-btn"
+                            type="button" data-filter="campus"
+                            aria-pressed="false">Campus Life</button>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="photo-grid" id="photoGrid">
+
+                <!-- Card 1 -->
+                <article class="photo-card" data-category="events">
+                    <button class="photo-open" type="button"
+                            aria-label="View Annual Day Celebration photograph"
+                            data-image="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Annual Day Celebration">
+                        <img
+                            src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80"
+                            alt="Stage performance during a school celebration"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">EVENTS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Annual Day Celebration</h3>
+                        <p>A celebration of talent, confidence and creativity.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> School celebration
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="photo-card" data-category="sports">
+                    <button class="photo-open" type="button"
+                            aria-label="View Sports Day photograph"
+                            data-image="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Sports Day">
+                        <img
+                            src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80"
+                            alt="Athletes running on a sports track"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">SPORTS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Sports Day</h3>
+                        <p>Celebrating teamwork, discipline and determination.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Sports and fitness
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="photo-card" data-category="academic">
+                    <button class="photo-open" type="button"
+                            aria-label="View Science Exhibition photograph"
+                            data-image="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Science Exhibition">
+                        <img
+                            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=700&q=80"
+                            alt="Scientific research and laboratory equipment"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">ACADEMICS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Science Exhibition</h3>
+                        <p>Turning questions into experiments and discoveries.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Academic activities
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="photo-card" data-category="cultural">
+                    <button class="photo-open" type="button"
+                            aria-label="View Cultural Festival photograph"
+                            data-image="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Cultural Festival">
+                        <img
+                            src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=700&q=80"
+                            alt="Performers on a stage at a cultural event"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">CULTURAL</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Cultural Festival</h3>
+                        <p>Celebrating expression, diversity and creativity.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Cultural activities
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="photo-card" data-category="workshops">
+                    <button class="photo-open" type="button"
+                            aria-label="View Student Workshop photograph"
+                            data-image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Student Workshop">
+                        <img
+                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+                            alt="Students working collaboratively on a project"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">WORKSHOPS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Student Workshop</h3>
+                        <p>Building practical skills through collaboration.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Practical learning
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="photo-card" data-category="events">
+                    <button class="photo-open" type="button"
+                            aria-label="View Student Achievement photograph"
+                            data-image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Student Achievements">
+                        <img
+                            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=700&q=80"
+                            alt="Students celebrating an academic milestone"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">ACHIEVEMENTS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Student Achievements</h3>
+                        <p>Recognising dedication, effort and progress.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Student accomplishments
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="photo-card" data-category="academic">
+                    <button class="photo-open" type="button"
+                            aria-label="View Classroom Learning photograph"
+                            data-image="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Interactive Classroom">
+                        <img
+                            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80"
+                            alt="Students learning in a bright classroom"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">ACADEMICS</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Interactive Classroom</h3>
+                        <p>Making every lesson engaging and meaningful.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Classroom activities
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="photo-card" data-category="cultural">
+                    <button class="photo-open" type="button"
+                            aria-label="View Art and Creativity photograph"
+                            data-image="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Art and Creativity">
+                        <img
+                            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80"
+                            alt="Art supplies and a creative art activity"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">CULTURAL</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Art and Creativity</h3>
+                        <p>Encouraging imagination through creative expression.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Arts and crafts
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="photo-card" data-category="campus">
+                    <button class="photo-open" type="button"
+                            aria-label="View School Campus photograph"
+                            data-image="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=90"
+                            data-title="Our School Campus">
+                        <img
+                            src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=700&q=80"
+                            alt="School building and campus surroundings"
+                            loading="lazy">
+                        <span class="image-view-icon">↗</span>
+                    </button>
+                    <div class="photo-info">
+                        <div class="photo-info-top">
+                            <span class="card-category">CAMPUS LIFE</span>
+                            <span class="card-symbol">✦</span>
+                        </div>
+                        <h3>Our School Campus</h3>
+                        <p>A welcoming environment for learning and growth.</p>
+                        <div class="photo-meta">
+                            <span>▦</span> Campus and facilities
+                        </div>
+                    </div>
+                </article>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <span>▧</span>
+                    <h3>No photographs in this category yet</h3>
+                    <p>Choose another category to explore our gallery.</p>
+                </div>
+
+            </div>
+
+            <!-- Gallery Footer Note -->
+            <div class="gallery-bottom-note">
+                <div class="bottom-note-icon">✦</div>
+                <div>
+                    <h3>More Memories, More Milestones</h3>
+                    <p>
+                        Our school journey continues with new activities,
+                        achievements and experiences throughout the academic year.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="gallery-cta">
+            <div class="cta-inner">
+                <div>
+                    <span class="section-label">BE PART OF OUR JOURNEY</span>
+                    <h2>Every Student Has a Story to Tell.</h2>
+                    <p>
+                        Discover our learning community and the experiences
+                        that make school life meaningful.
+                    </p>
+                </div>
+                <a href="contact.html" class="cta-button">
+                    Connect With Us <span>→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="brand footer-logo">
+                    <div class="logo">CC</div>
+                    <div class="brand-text">
+                        <strong>Campus content</strong>
+                        <span>LEARN • LEAD • ACHIEVE</span>
+                    </div>
+                </a>
+
+                <p>
+                    Building a bright tomorrow through quality education,
+                    strong values and a commitment to lifelong learning.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="Academics.html">Academics</a>
+                <a href="events.html">Events</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Student Resources</h4>
+                <a href="achievements.html">Achievements</a>
+                <a href="results.html">Examination Results</a>
+                <a href="noticeboard.html">Notice Board</a>
+                <a href="gallery.html">School Gallery</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Information</h4>
+                <p>
+                    <span>Location</span>
+                    Government Polytechnic Dehradun, Uttarakhand
+                </p>
+                <p>
+                    <span>Phone</span>
+                    <a href="tel:+918859865305">+91 88598 65305</a>
+                </p>
+                <p>
+                    <span>Email</span>
+                    <a href="mailto:info@campuscontent.edu">
+                        info@campuscontent.edu
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="copyrightYear"></span>
+                Campus Content. All rights reserved.
+            </p>
+            <p>Knowledge Today. Leadership Tomorrow.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Viewer -->
+    <div class="lightbox" id="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Photograph viewer"
+         aria-hidden="true"
+         hidden>
+
+        <button class="lightbox-close" id="lightboxClose"
+                type="button" aria-label="Close photograph viewer">×</button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"
+                type="button" aria-label="Previous photograph">‹</button>
+
+        <figure class="lightbox-figure">
+            <img src="" alt="" id="lightboxImage">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"
+                type="button" aria-label="Next photograph">›</button>
+
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- Page JavaScript -->
+    <script>
+        // Live date and time
+        const clock = document.getElementById("clock");
+
+        function updateClock() {
+            clock.textContent = new Date().toLocaleString("en-IN", {
+                dateStyle: "medium",
+                timeStyle: "medium"
+            });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        document.getElementById("copyrightYear").textContent =
+            new Date().getFullYear();
+
+        // Mobile navigation
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            const open = navLinks.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(open));
+            menuToggle.textContent = open ? "×" : "☰";
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        // Navbar shadow
+        window.addEventListener("scroll", () => {
+            document.getElementById("navbar").classList.toggle(
+                "scrolled", window.scrollY > 10
+            );
+        });
+
+        // Gallery category filtering
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const photoCards = [...document.querySelectorAll(".photo-card")];
+        const emptyState = document.getElementById("emptyState");
+        const photoCount = document.getElementById("photoCount");
+
+        function filterGallery(category) {
+            let visibleCount = 0;
+
+            photoCards.forEach(card => {
+                const matches =
+                    category === "all" || card.dataset.category === category;
+
+                card.hidden = !matches;
+
+                if (matches) visibleCount++;
+            });
+
+            photoCount.textContent = String(visibleCount).padStart(2, "0");
+            emptyState.hidden = visibleCount !== 0;
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(item => {
+                    item.classList.remove("active");
+                    item.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("active");
+                button.setAttribute("aria-pressed", "true");
+
+                filterGallery(button.dataset.filter);
+            });
+        });
+
+        filterGallery("all");
+
+        // Featured photos and gallery photos
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const lightboxCaption = document.getElementById("lightboxCaption");
+        const lightboxCounter = document.getElementById("lightboxCounter");
+
+        const galleryButtons = [
+            ...document.querySelectorAll(".photo-open, .view-featured")
+        ];
+
+        let currentPhotoIndex = 0;
+        let lastFocusedElement = null;
+
+        function getVisiblePhotos() {
+            return galleryButtons.filter(button => {
+                const card = button.closest(".photo-card");
+                return !card || !card.hidden;
+            });
+        }
+
+        function openLightbox(button) {
+            const visiblePhotos = getVisiblePhotos();
+
+            currentPhotoIndex = visiblePhotos.indexOf(button);
+            if (currentPhotoIndex < 0) currentPhotoIndex = 0;
+
+            lastFocusedElement = button;
+            renderLightboxPhoto();
+
+            lightbox.hidden = false;
+            lightbox.setAttribute("aria-hidden", "false");
+            document.body.classList.add("lightbox-open");
+
+            document.getElementById("lightboxClose").focus();
+        }
+
+        function renderLightboxPhoto() {
+            const visiblePhotos = getVisiblePhotos();
+
+            if (!visiblePhotos.length) return;
+
+            currentPhotoIndex =
+                (currentPhotoIndex + visiblePhotos.length) % visiblePhotos.length;
+
+            const button = visiblePhotos[currentPhotoIndex];
+
+            lightboxImage.src = button.dataset.image;
+            lightboxImage.alt = button.dataset.title || "School gallery photograph";
+            lightboxCaption.textContent = button.dataset.title || "School Gallery";
+
+            lightboxCounter.textContent =
+                `${currentPhotoIndex + 1} / ${visiblePhotos.length}`;
+        }
+
+        function closeLightbox() {
+            lightbox.hidden = true;
+            lightbox.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("lightbox-open");
+            lightboxImage.src = "";
+
+            if (lastFocusedElement) lastFocusedElement.focus();
+        }
+
+        function changePhoto(direction) {
+            currentPhotoIndex += direction;
+            renderLightboxPhoto();
+        }
+
+        galleryButtons.forEach(button => {
+            button.addEventListener("click", () => openLightbox(button));
+        });
+
+        document.getElementById("lightboxClose").addEventListener(
+            "click", closeLightbox
+        );
+
+        document.getElementById("lightboxPrev").addEventListener(
+            "click", () => changePhoto(-1)
+        );
+
+        document.getElementById("lightboxNext").addEventListener(
+            "click", () => changePhoto(1)
+        );
+
+        lightbox.addEventListener("click", event => {
+            if (event.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener("keydown", event => {
+            if (lightbox.hidden) return;
+
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowLeft") changePhoto(-1);
+            if (event.key === "ArrowRight") changePhoto(1);
+        });
+    </script>
+
+</body>
+</html>

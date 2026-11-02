@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the educational values and principles that guide Campus Content.">
+  <title>Our Values | Campus Content</title>
+  <link rel="stylesheet" href="values.css">
+</head>
+<body>
+  <div class="topbar"><div><span class="pulse"></span> Admissions Open for 2026–27</div><div id="clock" aria-live="polite"></div></div>
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Campus Content home"><span class="logo">CC</span><span>Campus Content</span></a>
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="Academics.html">Academics</a><a href="events.html">Events</a><a href="achievements.html">Achievements</a><a href="admission.html">Admission</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">The principles behind our purpose</p>
+        <h1>Strong values.<br><span>Brighter futures.</span></h1>
+        <p class="hero-copy">Education is more than what happens in a classroom. We aim to help learners grow with curiosity, integrity, confidence, and respect for others.</p>
+        <a class="gold-button" href="#core-values">Explore our values <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-quote">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <p>Knowledge builds capability. Character helps guide how we use it.</p>
+        <span class="quote-line"></span><small>Our guiding belief</small>
+        <div class="quote-watermark">CC</div>
+      </div>
+      <div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div>
+    </section>
+
+    <section class="intro section-shell">
+      <div class="intro-mark">CC</div>
+      <div><p class="eyebrow dark">Our commitment</p><h2>A school culture built on respect and possibility</h2></div>
+      <p class="intro-text">We want every student to feel encouraged to ask questions, take responsibility, learn from mistakes, and contribute positively to the school community. These values are intended to shape everyday choices—not just special occasions.</p>
+    </section>
+
+    <section class="values-section section-shell" id="core-values">
+      <div class="section-heading"><p class="eyebrow dark">What guides us</p><h2>Our core values</h2><p>Principles that support learning, relationships, and personal growth.</p></div>
+      <div class="value-grid">
+        <article class="value-card"><span class="value-number">01</span><span class="value-icon" aria-hidden="true">✦</span><h3>Integrity</h3><p>Encouraging honesty, fairness, and responsibility—even when no one is watching.</p><div class="value-rule"></div><small>Do the right thing</small></article>
+        <article class="value-card"><span class="value-number">02</span><span class="value-icon" aria-hidden="true">◎</span><h3>Respect</h3><p>Listening thoughtfully, valuing differences, and treating classmates and staff with dignity.</p><div class="value-rule"></div><small>Every voice matters</small></article>
+        <article class="value-card"><span class="value-number">03</span><span class="value-icon" aria-hidden="true">↗</span><h3>Curiosity</h3><p>Making space for questions, discovery, creativity, and a lifelong love of learning.</p><div class="value-rule"></div><small>Keep asking why</small></article>
+        <article class="value-card"><span class="value-number">04</span><span class="value-icon" aria-hidden="true">◇</span><h3>Discipline</h3><p>Building consistent habits, self-management, punctuality, and care for shared spaces.</p><div class="value-rule"></div><small>Small habits, big growth</small></article>
+        <article class="value-card"><span class="value-number">05</span><span class="value-icon" aria-hidden="true">♡</span><h3>Empathy</h3><p>Recognising how others may feel and responding with kindness, patience, and support.</p><div class="value-rule"></div><small>Lead with kindness</small></article>
+        <article class="value-card"><span class="value-number">06</span><span class="value-icon" aria-hidden="true">✧</span><h3>Teamwork</h3><p>Sharing ideas, helping peers, and learning to achieve more through cooperation.</p><div class="value-rule"></div><small>Grow together</small></article>
+      </div>
+    </section>
+
+    <section class="practice-section">
+      <div class="practice-inner">
+        <div class="practice-heading"><p class="eyebrow">Values in action</p><h2>How values become daily habits</h2><p>We encourage students to put these principles into practice through simple, consistent actions.</p></div>
+        <div class="practice-list">
+          <div class="practice-item"><span>01</span><div><h3>In the classroom</h3><p>Listen actively, ask thoughtful questions, and give every learner a chance to participate.</p></div></div>
+          <div class="practice-item"><span>02</span><div><h3>Across the campus</h3><p>Respect shared spaces, follow agreed routines, and help keep the environment welcoming.</p></div></div>
+          <div class="practice-item"><span>03</span><div><h3>In the community</h3><p>Practise kindness, work collaboratively, and consider how our actions affect others.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-shell"><p class="eyebrow dark">Learning with purpose</p><h2>Helping every learner become their best self.</h2><p>Strong values grow through example, encouragement, and everyday practice.</p><a class="navy-button" href="contact.html">Connect with us <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><div><a class="footer-brand" href="index.html">Campus Content</a><p>Building a bright tomorrow through quality education and timeless values.</p></div><div><h4>Contact</h4><p>Phone: +91 8859865305<br>Email: <a href="mailto:info@campuscontent.edu">info@campuscontent.edu</a></p></div><div><h4>Visit</h4><p>Dehradun, Uttarakhand, India</p><a class="footer-link" href="contact.html">Get in touch →</a></div></div><div class="footer-bottom">© <span id="yearNow"></span> Campus Content</div></footer>
+  <script>
+    const clock=document.getElementById("clock"), navbar=document.getElementById("navbar");
+    function updateClock(){clock.textContent=new Date().toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"});}
+    updateClock();setInterval(updateClock,60000);
+    window.addEventListener("scroll",()=>navbar.classList.toggle("scrolled",window.scrollY>8));
+    document.getElementById("yearNow").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
